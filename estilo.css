@@ -1,0 +1,472 @@
+/* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0ffff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Barra de Navegación */
+.barra-navegacion {
+  width: 100%;
+  background-color: #256a9c;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.barra-navegacion .marca,
+.menu-navegacion,
+.iconos-navegacion {
+  display: flex;
+  align-items: center;
+}
+
+.barra-navegacion .marca {
+  margin-right: auto;
+}
+
+.menu-navegacion {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.enlace-navegacion {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.enlace-navegacion:hover {
+  color: #d9d9d9;
+}
+
+.barra-busqueda-contenedor {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.barra-busqueda {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #dffefb;
+  outline: none;
+  color: #072e4a;
+  width: 200px;
+  cursor: pointer;
+}
+
+.icono-busqueda {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.icono-busqueda img,
+.icono-usuario img,
+.logo {
+  width: 18px;
+  height: 18px;
+}
+
+.icono-usuario {
+  background-color: #dffefb;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icono-usuario img {
+  width: 18px;
+  height: 18px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+}
+
+/* Contenedor Principal */
+.contenedor-principal {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: #f0ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+/* Estilos del Carrusel */
+.carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.lado-izquierdo,
+.lado-derecho {
+  height: 100%;
+}
+
+.lado-izquierdo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0ffff;
+  padding: 20px;
+}
+
+.lado-derecho {
+  flex: 2;
+  background-position: center;
+  background-size: cover;
+}
+
+.contenido {
+  text-align: left;
+  color: #1c4f65;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.titulo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #256a9c;
+  position: relative;
+}
+
+.titulo .eco {
+  color: #36b7b7;
+  display: inline-block;
+}
+
+.descripcion {
+  font-size: 24px;
+  color: #072e4a;
+  position: relative;
+}
+
+.descripcion .prevenir {
+  color: #42acda;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: -0.5em;
+}
+
+.contenido button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0266a2;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Flechas de Navegación y Botones de Paginación */
+.arrows,
+.botones-paginacion {
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.arrows {
+  left: 30%;
+}
+
+.botones-paginacion {
+  left: 43%;
+}
+
+.prev,
+.next,
+.boton-paginacion {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #0266a2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none;
+}
+
+.boton-paginacion {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.boton-paginacion.activo {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Secciones */
+.seccion {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: #e0ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Segunda Sección */
+.segunda-seccion {
+  background-color: #e0ffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.segunda-seccion h2 {
+  font-size: 36px;
+  color: #072e4a;
+  margin-bottom: 0px;
+}
+
+.segunda-seccion h2 span.alerta {
+  color: #072e4a;
+}
+
+.descripcion-plataforma {
+  font-size: 20px;
+  color: #072e4a;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.segunda-seccion-contenido {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.caracteristica {
+  background-color: #36b7b7;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 5px 10px #000;
+}
+
+.caracteristica img {
+  width: 35px;
+  height: 35px;
+}
+
+.caracteristica span {
+  font-size: 16px;
+}
+
+.caracteristica.activa {
+  background-color: #0266a2;
+  transform: scale(1.05);
+}
+
+/* Estilo .card para imagen-caracteristica */
+.imagen-caracteristica {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+  background: linear-gradient(transparent 80%, #000), var(--i);
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+}
+
+.imagen-caracteristica:hover {
+  transform: none;
+}
+
+.imagen-caracteristica h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.imagen-contenedor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imagen-caracteristica img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagen-descripcion {
+  position: absolute;
+  width: 130%;
+  height: 80%;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-150%);
+  margin: auto;
+  padding: 15px;
+  background: #42acda70;
+  z-index: 90;
+  box-shadow: 0 5px 10px #000;
+  text-align: left;
+  max-width: 1200px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.imagen-caracteristica:hover .imagen-descripcion {
+  opacity: 1;
+  transform: translateY(-50%) translateX(10px);
+  pointer-events: auto;
+}
+
+.imagen-descripcion .head {
+  padding: 5px 0;
+  border-bottom: solid 1px #bc8811;
+}
+
+.imagen-descripcion .head .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #bc8811;
+}
+
+.imagen-descripcion .head .description {
+  display: flex;
+  gap: 10px;
+}
+
+.imagen-descripcion .head .description .item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.imagen-descripcion .head .description .item i {
+  color: #bc8811;
+  font-size: 15px;
+}
+
+.imagen-descripcion .head .description .item p {
+  font-size: 13px;
+}
+
+.imagen-descripcion .content {
+  margin-top: 15px;
+}
+
+.imagen-descripcion .content .list {
+  padding: 10px 15px;
+}
+
+.imagen-descripcion .content .list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.imagen-descripcion .action .btn {
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  background: #bc8811;
+  display: block;
+  margin-top: 10px;
+  margin-left: -30%;
+}
+
+#imagen-titulo {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #072e4a;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.show-more {
+  color: #072e4a;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}

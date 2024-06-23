@@ -1,0 +1,291 @@
+/* Estilos Responsivos */
+
+/* Barra de Navegación */
+@media screen and (max-width: 768px) {
+  .barra-navegacion {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu-navegacion {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .barra-busqueda-contenedor {
+    margin-right: 0;
+  }
+
+  .barra-busqueda {
+    width: 100%;
+  }
+
+  .icono-usuario {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Contenedor Principal */
+@media screen and (max-width: 768px) {
+  .contenedor-principal {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .contenido {
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 32px;
+  }
+
+  .descripcion {
+    font-size: 18px;
+  }
+
+  .contenido button {
+    width: 100%;
+  }
+}
+
+/* Flechas de Navegación y Botones de Paginación */
+@media screen and (max-width: 768px) {
+  .arrows,
+  .botones-paginacion {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .arrows {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .prev,
+  .next {
+    padding: 5px;
+  }
+
+  .boton-paginacion {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Segunda Sección */
+@media screen and (max-width: 768px) {
+  .segunda-seccion h2 {
+    font-size: 24px;
+  }
+
+  .descripcion-plataforma {
+    font-size: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .caracteristicas {
+    gap: 10px;
+  }
+
+  .caracteristica {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .caracteristica img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Tercera Sección */
+@media screen and (max-width: 768px) {
+  .tercera-seccion {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .contenedor-video {
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario-login {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-video h2 {
+    font-size: 18px;
+    top: -15px;
+    margin-bottom: -15px;
+  }
+
+  .tercera-seccion .contenido {
+    gap: 15px;
+  }
+
+  .tercera-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 40px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tercera-seccion .contenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contenedor-video,
+  .formulario-login {
+    box-sizing: border-box;
+  }
+
+  .contenedor-video img,
+  .contenedor-video .videoBeneficios {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor-video h2 {
+    font-size: 18px;
+    top: -15px;
+    margin-bottom: -15px;
+  }
+
+  .tercera-seccion .contenido {
+    gap: 15px;
+  }
+
+  .tercera-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 40px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tercera-seccion .contenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contenedor-video,
+  .formulario-login {
+    box-sizing: border-box;
+  }
+
+  .contenedor-video img,
+  .contenedor-video .videoBeneficios {
+    width: 350px;
+    max-width: 480px;
+    height: auto;
+    justify-content: left;
+    align-items: left;
+  }
+}
+
+/* Cuarta Sección */
+@media (max-width: 768px) {
+  .cuarta-seccion {
+    padding: 20px;
+  }
+
+  .contenedor-emergencias {
+    flex-direction: column;
+  }
+
+  .emergencia {
+    width: 100%;
+  }
+
+  .tarjeta-servicio {
+    margin: 20px 0;
+  }
+}
+
+/* Quinta Sección */
+@media (max-width: 768px) {
+  .conteiner-nosotros {
+    width: 80%;
+    height: 100%;
+    margin-top: 70px;
+  }
+
+  .slide {
+    width: 200%;
+    height: 300px;
+  }
+
+  .pagination {
+    width: 100%;
+  }
+
+  .pagination-item {
+    width: 16px;
+    height: 16px;
+  }
+
+  .descripcion p {
+    font-size: 14px;
+  }
+
+  .descripcion {
+    width: 100%;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  .footer-contenido {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo {
+    height: 40px;
+  }
+
+  .footer-redes a {
+    margin: 5px 0;
+  }
+
+  .footer-redes img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Efectos Responsivos Adicionales */
+@media (max-width: 768px) {
+  .contenedor-principal,
+  .segunda-seccion,
+  .tercera-seccion,
+  .cuarta-seccion,
+  .quinta-seccion {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contenedor-principal:hover,
+  .segunda-seccion:hover,
+  .tercera-seccion:hover,
+  .cuarta-seccion:hover,
+  .quinta-seccion:hover {
+    transform: scale(1.02);
+  }
+}

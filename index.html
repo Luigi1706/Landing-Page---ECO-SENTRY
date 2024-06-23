@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECO SENTRY - Prevenir es Proteger</title>
+    <meta name="description" content="ECO SENTRY - Prevenir es Proteger" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="barra-navegacion">
+            <a href="#" class="marca">
+                <img src="img/logo.png" alt="Logo" class="logo" />
+            </a>
+            <ul class="menu-navegacion">
+                <li><a href="#inicio" class="nav-link enlace-navegacion">Inicio</a></li>
+                <li><a href="#caracteristicas" class="nav-link enlace-navegacion">Características</a></li>
+                <li><a href="#beneficios" class="nav-link enlace-navegacion">Beneficios</a></li>
+                <li><a href="#noticias" class="nav-link enlace-navegacion">Noticias</a></li>
+                <li><a href="#nosotros" class="nav-link enlace-navegacion">Nosotros</a></li>
+            </ul>
+            <div class="iconos-navegacion">
+                <form class="barra-busqueda-contenedor">
+                    <input type="text" class="barra-busqueda" placeholder="Buscar..." />
+                    <button type="submit" class="icono-busqueda">
+                        <img src="img/lupa.png" alt="Buscar" />
+                    </button>
+                </form>
+                <img src="img/usuario.png" alt="Usuario" class="icono-usuario" />
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main id="inicio" class="contenedor-principal">
+        <section class="carrusel">
+            <article class="item">
+                <div class="lado-izquierdo">
+                    <div class="contenido">
+                        <h1 class="titulo"><span class="eco">ECO</span> SENTRY</h1>
+                        <p class="descripcion">
+                            <span class="prevenir">Prevenir es proteger:</span>
+                        </p>
+                        <p class="descripcion">
+                            <strong>nuestro compromiso contigo.</strong>
+                        </p>
+                        <button>Conoce más</button>
+                    </div>
+                </div>
+                <div class="lado-derecho" style="background-image: url('img/imagen1.jpg')"></div>
+            </article>
+            <article class="item">
+                <div class="lado-izquierdo">
+                    <div class="contenido">
+                        <h1 class="titulo"><span class="eco">ECO</span> SENTRY</h1>
+                        <p class="descripcion">
+                            <span class="prevenir">Tecnología que previene,</span>
+                        </p>
+                        <p class="descripcion"><strong>vidas que prosperan.</strong></p>
+                        <button>Conoce más</button>
+                    </div>
+                </div>
+                <div class="lado-derecho" style="background-image: url('img/imagen2.jpg')"></div>
+            </article>
+            <article class="item">
+                <div class="lado-izquierdo">
+                    <div class="contenido">
+                        <h1 class="titulo"><span class="eco">ECO</span> SENTRY</h1>
+                        <p class="descripcion">
+                            <span class="prevenir">Monitoreo inteligente</span>
+                        </p>
+                        <p class="descripcion">
+                            <strong>para tiempos inciertos.</strong>
+                        </p>
+                        <button>Conoce más</button>
+                    </div>
+                </div>
+                <div class="lado-derecho" style="background-image: url('img/imagen3.jpg')"></div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Flechas de Navegación -->
+    <div class="arrows">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <!-- Botones de Paginación -->
+    <div class="botones-paginacion">
+        <span class="boton-paginacion activo"></span>
+        <span class="boton-paginacion"></span>
+        <span class="boton-paginacion"></span>
+    </div>
+
+
+    <!-- Segunda Sección -->
+<section id="caracteristicas" class="segunda-seccion seccion animate__animated">
+    <h2>¡Con Eco Sentry <span>mantente siempre alerta!</span></h2>
+    <p class="descripcion-plataforma">Descubre lo que puedes hacer en la plataforma</p>
+    <div class="segunda-seccion-contenido">
+        <div class="caracteristicas">
+            <div class="caracteristica c1 activa" data-imagen="img/caracteristica1.png" data-titulo="Asistencia en la Creación de Planes de Contingencia" data-descripcion="">
+                <img src="img/icono1.png" alt="Icono 1" />
+                <span>Característica 1</span>
+            </div>
+            <div class="caracteristica c2" data-imagen="img/caracteristica2.png" data-titulo="Información Ambiental Clara y Accesible" data-descripcion="">
+                <img src="img/icono2.png" alt="Icono 2" />
+                <span>Característica 2</span>
+            </div>
+            <div class="caracteristica c3" data-imagen="img/caracteristica3.png" data-titulo="Monitoreo Hidrometeorológico en Tiempo Real" data-descripcion="">
+                <img src="img/icono3.png" alt="Icono 3" />
+                <span>Característica 3</span>
+            </div>
+            <div class="caracteristica c4" data-imagen="img/caracteristica4.png" data-titulo="Alertas Tempranas" data-descripcion="">
+                <img src="img/icono4.png" alt="Icono 4" />
+                <span>Característica 4</span>
+            </div>
+        </div>
+        <div class="imagen-caracteristica">
+            <div class="imagen-contenedor">
+                <img id="imagen-principal" src="img/caracteristica1.png" alt="Imagen Característica" />
+            </div>
+            <h6 id="imagen-titulo">Asistencia en la Creación de Planes de Contingencia</h6>
+            <div class="imagen-descripcion" id="imagen-descripcion">Eco Sentry ofrece una funcionalidad avanzada para ayudar a las comunidades, empresas y autoridades locales a desarrollar planes de contingencia efectivos y personalizados. Esta herramienta es esencial para la preparación y respuesta ante eventos ambientales extremos, asegurando que las acciones preventivas y de mitigación se ejecuten de manera oportuna y organizada.</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Tercera Sección -->
+    <section id="beneficios" class="tercera-seccion">
+        <!-- Sección de beneficios -->
+        <div class="contenido-izquierdo">
+            <!-- Contenido del lado izquierdo -->
+            <h2>Beneficios de registrarse</h2>
+            <!-- Título de la sección -->
+            <section class="contenedor-video">
+                <!-- Contenedor del video -->
+                <video src="videos/beneficios.mp4" controls poster="img/video_background.jpg"
+                    class="videoBeneficios"></video>
+                <!-- Video incrustado -->
+            </section>
+        </div>
+        <section class="formulario-login">
+            <!-- Formulario de inicio de sesión -->
+            <h2>Iniciar sesión</h2>
+            <!-- Título del formulario -->
+            <div class="botones-login">
+                <!-- Contenedor de botones de login -->
+                <button class="login-google">
+                    <img src="img/google_icon.png" alt="Google Icon" /> Google
+                </button>
+                <button class="login-apple">
+                    <img src="img/apple_icon.png" alt="Apple Icon" /> Apple
+                </button>
+            </div>
+            <form>
+                <!-- Formulario de login -->
+                <label for="email" class="USACORREO">O usa tu correo electrónico</label>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required />
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required />
+                <button type="submit" class="ISButton">Iniciar sesión</button>
+            </form>
+            <a href="#" class="registro">Si no tienes cuenta, regístrate aquí</a>
+            <a href="#" class="olvide-password">¿Olvidaste tu contraseña?</a>
+        </section>
+    </section>
+
+    <!-- Cuarta Sección -->
+    <section id="noticias" class="cuarta-seccion seccion animate__animated">
+        <h2>Principales situaciones de <span>emergencia</span></h2>
+        <div class="contenedor-emergencias">
+            <article class="emergencia tarjeta-servicio c1">
+                <div class="frente icon">
+                    <img src="img/imagen_emergencia1.jpg" alt="Emergencia 1" class="ima4" />
+                </div>
+                <div class="contenido-servicio ifo__descrip">
+                    <h3>Emergencia 1</h3>
+                    <p>
+                        Intensas lluvias causaron deslizamientos de lodo e inundaciones en
+                        siete distritos de Lima. Se anunció el estado de emergencia en Punta
+                        Hermosa, San Bartolo y Pucusana.
+                    </p>
+                    <input type="button" value="Leer más">
+                </div>
+            </article>
+            <article class="emergencia tarjeta-servicio c2">
+                <div class="frente icon">
+                    <img src="img/imagen_emergencia2.jpg" alt="Emergencia 2" class="ima5" />
+                </div>
+                <div class="contenido-servicio ifo__descrip">
+                    <h3>Emergencia 2</h3>
+                    <p>
+                        Durante el 2017, un fenómeno climático conocido como El Niño Costero
+                        provocó uno de los mayores desastres naturales en el Perú. Más de
+                        100,000 damnificados, 75 fallecidos, 10,000 viviendas colapsadas y
+                        medio millón de afectados fueron el saldo final de este evento.
+                    </p>
+                    <input type="button" value="Leer más">
+                </div>
+            </article>
+            <article class="emergencia tarjeta-servicio c3">
+                <div class="frente icon">
+                    <img src="img/imagen_emergencia3.jpg" alt="Emergencia 3" class="ima6" />
+                </div>
+                <div class="contenido-servicio ifo__descrip">
+                    <h3>Emergencia 3</h3>
+                    <p>
+                        El 15 de marzo del 2017, Evangelina Chamorro se salvó de la furia del
+                        huaico ocasionado por el fenómeno del Niño Costero. Los efectos en la
+                        costa del país provocaron lluvias, inundaciones y huaicos como el que
+                        se registró en el distrito de Punta Hermosa, en Lima.
+                    </p>
+                    <input type="button" value="Leer más">
+                </div>
+            </article>
+        </div>
+        <div class="descargar-app-container">
+            <button class="descargar-app">Descarga nuestra app</button>
+        </div>
+    </section>
+
+    <!-- Quinta Sección -->
+    <!--Nosotros --> 
+      <div id="nosotros"></div>
+      <div class="conteiner-nosotros">
+        <div class="conteiner-nosotros-texto">
+          <h2  class="N-nosotros">Nosotros</h2>
+        </div>
+
+        <div class="slide">
+            <div class ="item-slide">
+              <img src="img/R.jpg" alt="">
+            </div>
+            <div class ="item-slide">
+              <img src="img/IHC - TB2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="pagination">
+          <label class="pagination-item" for="1"> 
+            <img src="img/R.jpg" alt>
+          </label>
+          <label class="pagination-item" for="2"> 
+            <img src="img/IHC - TB2.jpg">
+          </label>
+        </div>
+      </div>
+      <div class="descripcion">
+        <p>
+          En Ecosentry, nuestro lema "Prevenir es Proteger" refleja nuestra misión de ofrecer soluciones sostenibles y efectivas para la preservación del medio ambiente. Estamos comprometidos con la educación y la acción consciente, proporcionando herramientas y conocimientos que empoderan a individuos y comunidades para hacer cambios positivos. Nuestra promesa es estar a tu lado, guiándote hacia prácticas más verdes y seguras, porque entendemos que proteger nuestro planeta es proteger nuestro hogar común y el legado que dejaremos a las futuras generaciones.
+        </p>
+      </div>
+
+    <!-- Footer -->
+    <footer class="footer-seccion">
+        <div class="footer-contenido">
+            <img src="img/Logo+Nombre.png" alt="ECO SENTRY Logo" class="footer-logo" />
+            <div class="footer-redes">
+                <a href="#"><img src="img/Ícono_facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="img/Ícono_instagram.png" alt="Instagram" /></a>
+                <a href="#"><img src="img/Ícono_tiktok.png" alt="TikTok" /></a>
+                <a href="#"><img src="img/Ícono_youtube.png" alt="YouTube" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

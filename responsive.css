@@ -106,23 +106,6 @@
 
 /* Tercera Sección */
 @media screen and (max-width: 768px) {
-  .tercera-seccion {
-    padding: 20px;
-    flex-direction: column;
-  }
-
-  .contenedor-video {
-    width: 100%;
-    height: auto;
-  }
-
-  .formulario-login {
-    width: 100%;
-    padding: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .contenedor-video h2 {
     font-size: 18px;
     top: -15px;
